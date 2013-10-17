@@ -15,6 +15,7 @@ var myChoresAre = ["wash dishes", "vacuum", " and dust"];
 var myFavBooks  = [" Beginning JavaScript ", " JavaScript for Absolute Beginners ", " and Step-by-Step JavaScript "];
 var minsPerBook = [45, 20, 30];
 var doChores    = true;
+var pagesRead = 9;
 
 console.log("My name is " + myName + " and it is " + doChores+" that I have " + myChores + " chores to do before lunch.");
 
@@ -81,16 +82,16 @@ var pagesToRead = {
     reading : function(pages){
     while (pages < 0) {
     console.log(pages + " pages left to read.");
-    var pages = pages + 9;
+    var pagesRead = pagesToRead + 9;
     }
-return pages;
+return pagesRead;
     }
 };
 
-var pagesRead = pagesToRead(22);
 
-console.log( "I have read " + pagesRead.reading(0) + " pages of my textbook- Beginning JavaScript so far.")
-;
+
+console.log( "I have read " + pagesToRead(43) + " pages of my textbook- Beginning JavaScript so far.")
+
 
 //String Function
 

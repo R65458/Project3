@@ -26,15 +26,18 @@ var iRead = {
         }
         
         }
+   
     };
 
 
 //Method Procedure
 
 var hoursForHomework = function(freeHours){
-    if (freeHours > 1) {
+
+if (freeHours > 1) {
         console.log("I have " + freeHours + " hours of homework to do before I can do my chores or cook lunch.");
-    } else {
+    
+} else {
         console.log("I don't have time to do homework before lunch");
     }
 
@@ -48,34 +51,20 @@ console.log("Before I do my homework I will lay out something to cook for lunch"
 
 
 var todaysLunch = function(Hamburgers, Fries, SweetTea){
-    if (Hamburgers + Fries + SweetTea > 0) {
-        var cook = true;
-        return cook;
-    } else {
-        var orderChineseTakeout = false;
-        return orderChineseTakeout;
+    
+if (Hamburgers + Fries + SweetTea > 0) {
+    var cook = true;
+    return cook;
+    
+} else {
+    var orderChineseTakeout = false;
+    return orderChineseTakeout;
     }
 };
 
 var iWillCook = todaysLunch(3,1,1);
 console.log("It is " + iWillCook + " that I will cook hamburgers, french fries and sweet tea for lunch.");
 
-//Number Function With Accessor
-
-var pagesToRead = {
-    reading : function(pages){
-    while (pages < 0) {
-       console.log(pages + " pages left to read.");
-       var pages = pages + 9;
-    }
-return pages;
-    }
-};
-
-var pagesRead = pagesToRead(22);
-
-console.log( "I have read " + pagesRead.reading(0) + " pages of my textbook- Beginning JavaScript so far.")
-;
 
 //String Function
 
@@ -118,9 +107,9 @@ var timeStudied = {
    "Objects": 120,
    "Methods": 90,
    "studyTime": function(){
-        var totalStudyTime = this.JavaScript + this.Objects + this.Methods;
-        var totalToHours = totalStudyTime / 60;
-        return totalToHours;
+    var totalStudyTime = this.JavaScript + this.Objects + this.Methods;
+    var totalToHours = totalStudyTime / 60;
+    return totalToHours;
    },
    "newTime": function(studymore){
     this.JavaScript = studymore;

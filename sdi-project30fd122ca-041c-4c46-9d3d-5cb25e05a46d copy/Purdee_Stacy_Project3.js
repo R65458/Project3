@@ -126,6 +126,22 @@ console.log("I will read " + bookName + ".");
 var didRead = extraReadingMaterial.readMoreBooks(myFavBooks,minsPerBook);
 console.log("I am reading from " + didRead + " to help learn JavaScript.");
 
+//Method with accessor and mutator
+
+var timeStudied = {
+   "JavaScript": 180,
+   "Objects": 120,
+   "Methods": 90,
+   "studyTime": function(){
+    var totalStudyTime = this.JavaScript + this.Objects + this.Methods;
+    var totalToHours = totalStudyTime / 60;
+    return totalToHours;
+   },
+   "newTime": function(studymore){
+    this.JavaScript = studymore;
+   }
+};
+
 
 
 

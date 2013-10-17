@@ -22,34 +22,26 @@ console.log("My name is " + myName + " and it is " + doChores+" that I have " + 
 console.log("My chores are " + myChoresAre + " .");
 
 //JSON Data
-var iRead = {
-    "myBooks": {
-        "book1":{ 
-            "name": "Beginning JavaScript",
-            "version": "Electronic"
-        },
-        "book2":{
-            "name": "Javascript for Absolute Beginners",
-            "version": "Hardback" 
-        },
-        "book3": {
-            "name": "Step by Step JavScript",
-            "version": "Electronic"
-        }
-        
-        }
+var json = {
+    "book" : "Beginning JavaScript",
+    "level" : "Beginner",
+    "platform" : "Ebook"
    
     };
 
+console.log("I need to study from " + json.book + " this week for homework.");
+console.log("It is a " + json.level + " textbook to help you learn the fundamentals.");
+console.log("It is easy too read on all my devices as it is an " + json.platform + " that I got at IT library online.");
+
 //Method Procedure
 
-var hoursForHomework = function(freeHours){
+var hoursForHomework = function (freeHours) {
 
 if (freeHours > 1) {
-        console.log("I have " + freeHours + " hours of homework to do before I can do my chores or cook lunch.");
+    console.log("I have " + freeHours + " hours of homework to do before I can do my chores or cook lunch.");
     
 } else {
-        console.log("I don't have time to do homework before lunch");
+    console.log("I don't have time to do homework before lunch");
     }
 
 };
@@ -76,58 +68,38 @@ if (Hamburgers + Fries + SweetTea > 0) {
 var iWillCook = todaysLunch(3,1,1);
 console.log("It is " + iWillCook + " that I will cook hamburgers, french fries and sweet tea for lunch.");
 
-//Number Function With Accessor
+//Number Function
 
-var pagesToRead = {
-    reading : function(pages){
+var pagesToRead = function(pages){
+    
     while (pages < 0) {
     console.log(pages + " pages left to read.");
     var pagesRead = pagesToRead + 9;
     }
 return pagesRead;
-    }
-};
+}
 
 
 
-console.log( "I have read " + pagesToRead(43) + " pages of my textbook- Beginning JavaScript so far.")
+
+console.log( "I have read " + pagesToRead(0) + " pages of my textbook- Beginning JavaScript so far.")
 
 
 //String Function
 
-var homeworkToFinish = function(project2, video){
-    var myProject2 = ("It is a very long assignment.");
-    var myVideo = ("It will not take long to make a new video.");
-    return project2 + myProject2 +  "but " + video + myVideo;
+var homeworkToFinish = function(project3, video){
+    var myProject3 = (" is a very long assignment ");
+    var myVideo = (" will not take long to make.");
+    return project3 + myProject3 +  "but " + video + myVideo;
 };
 
-var homework = homeworkToFinish(" SDI Wk 2 Assignment", "SDI Reflection Video");
+var homework = homeworkToFinish("SDI Wk 3 Assignment", "the SDI Reflection Video");
 console.log(homework);
 console.log("I will do my Project first than I will make my video.");
 
-//Array Function
 
-var extraReadingMatrial = {
-    readMoreBooks : function (books, time) {
-    for (var bookNumber = 3; bookNumber < books.length; bookNumber++){
-    var iWillRead = books;
-    var bookName = books[bookNumber];
-    timeThisBook = time[bookNumber];
-console.log("I have started to read " + bookName + "for" + timeThisBook + "minutes.");
-    for (var minutes = 3; minutes < timeThisBook; minutes + 15){
-    var timeLeft = timeThisBook- minutes;
-console.log(minutes + " read" + timeLeft + "left");
-    }
-console.log("I will read " + bookName + ".");
-    return iWillRead;
-    }
-}
-};
 
-var didRead = extraReadingMaterial.readMoreBooks(myFavBooks,minsPerBook);
-console.log("I am reading from " + didRead + " to help learn JavaScript.");
-
-//Method with accessor and mutator
+//Array Method 
 
 var timeStudied = {
    "JavaScript": 180,
@@ -137,26 +109,19 @@ var timeStudied = {
     var totalStudyTime = this.JavaScript + this.Objects + this.Methods;
     var totalToHours = totalStudyTime / 60;
     return totalToHours;
-   },
-   "newTime": function(studymore){
-    this.JavaScript = studymore;
    }
-};
-
-console.log("I have studied Javascript "+ timeStudied.studyTime.JavaScript + " minutes.");
-console.log("I have studied Objects "+ timeStudied.studyTime.Objects + " minutes.");
-console.log("I have studied Methods "+ timeStudied.studyTime.Methods + " minutes.");
-console.log("This is only " + timeStudied.studyTime() + " hours.");
-console.log("I think I need to study more JavaScript");
-
-timeStudied.newtime(220);
  
-console.log(" I have now studied for " + timeStudied.studyTime() + " hours.")
+   
+}
+
+console.log("I have studied Javascript "+ timeStudied.JavaScript + " minutes.");
+console.log("I have studied Objects "+ timeStudied.Objects + " minutes.");
+console.log("I have studied Methods "+ timeStudied.Methods + " minutes.");
+console.log("I think I need to study more JavaScript");
+console.log("I have now studied for " + timeStudied.studyTime() + " hours.")
 
 
-//Output
 
-console.log("I managed to get my project done.");
 
 //Finished
 

@@ -75,6 +75,22 @@ if (Hamburgers + Fries + SweetTea > 0) {
 var iWillCook = todaysLunch(3,1,1);
 console.log("It is " + iWillCook + " that I will cook hamburgers, french fries and sweet tea for lunch.");
 
+//Number Function With Accessor
+
+var pagesToRead = {
+    reading : function(pages){
+    while (pages < 0) {
+    console.log(pages + " pages left to read.");
+    var pages = pages + 9;
+    }
+return pages;
+    }
+};
+
+var pagesRead = pagesToRead(22);
+
+console.log( "I have read " + pagesRead.reading(0) + " pages of my textbook- Beginning JavaScript so far.")
+;
 
 
 

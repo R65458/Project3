@@ -39,3 +39,18 @@ var iRead = {
         }
    
     };
+
+//Method Procedure
+
+var hoursForHomework = function(freeHours){
+
+if (freeHours > 1) {
+        console.log("I have " + freeHours + " hours of homework to do before I can do my chores or cook lunch.");
+    
+} else {
+        console.log("I don't have time to do homework before lunch");
+    }
+
+};
+
+hoursForHomework(2);

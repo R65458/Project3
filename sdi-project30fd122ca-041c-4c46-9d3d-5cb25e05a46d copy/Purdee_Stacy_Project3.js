@@ -142,6 +142,13 @@ var timeStudied = {
    }
 };
 
+console.log("I have studied Javascript "+ timeStudied.studyTime.JavaScript + " minutes.");
+console.log("I have studied Objects "+ timeStudied.studyTime.Objects + " minutes.");
+console.log("I have studied Methods "+ timeStudied.studyTime.Methods + " minutes.");
+console.log("This is only " + timeStudied.studyTime() + " hours.");
+console.log("I think I need to study more JavaScript");
+
+
 
 
 

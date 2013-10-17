@@ -104,7 +104,27 @@ var homework = homeworkToFinish(" SDI Wk 2 Assignment", "SDI Reflection Video");
 console.log(homework);
 console.log("I will do my Project first than I will make my video.");
 
+//Array Function
 
+var extraReadingMatrial = {
+    readMoreBooks : function (books, time) {
+    for (var bookNumber = 3; bookNumber < books.length; bookNumber++){
+    var iWillRead = books;
+    var bookName = books[bookNumber];
+    timeThisBook = time[bookNumber];
+console.log("I have started to read " + bookName + "for" + timeThisBook + "minutes.");
+    for (var minutes = 3; minutes < timeThisBook; minutes + 15){
+    var timeLeft = timeThisBook- minutes;
+console.log(minutes + " read" + timeLeft + "left");
+    }
+console.log("I will read " + bookName + ".");
+    return iWillRead;
+    }
+}
+};
+
+var didRead = extraReadingMaterial.readMoreBooks(myFavBooks,minsPerBook);
+console.log("I am reading from " + didRead + " to help learn JavaScript.");
 
 
 

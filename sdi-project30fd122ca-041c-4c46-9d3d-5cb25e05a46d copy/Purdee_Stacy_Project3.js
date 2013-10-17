@@ -54,3 +54,47 @@ if (freeHours > 1) {
 };
 
 hoursForHomework(2);
+
+//Boolean Function
+
+console.log("Before I do my homework I will lay out something to cook for lunch");
+
+
+var todaysLunch = function(Hamburgers, Fries, SweetTea){
+    
+if (Hamburgers + Fries + SweetTea > 0) {
+    var cook = true;
+    return cook;
+    
+} else {
+    var orderChineseTakeout = false;
+    return orderChineseTakeout;
+    }
+};
+
+var iWillCook = todaysLunch(3,1,1);
+console.log("It is " + iWillCook + " that I will cook hamburgers, french fries and sweet tea for lunch.");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

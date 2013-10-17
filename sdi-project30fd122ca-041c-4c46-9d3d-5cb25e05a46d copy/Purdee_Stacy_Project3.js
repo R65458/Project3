@@ -148,6 +148,16 @@ console.log("I have studied Methods "+ timeStudied.studyTime.Methods + " minutes
 console.log("This is only " + timeStudied.studyTime() + " hours.");
 console.log("I think I need to study more JavaScript");
 
+timeStudied.newtime(220);
+ 
+console.log(" I have now studied for " + timeStudied.studyTime() + " hours.")
+
+
+//Output
+
+console.log("I managed to get my project done.");
+
+//Finished
 
 
 
